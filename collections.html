@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Collections — Alabaster & Travertine Lighting | GLEAMORY</title>
+<meta name="description" content="Selected alabaster and travertine lighting by GLEAMORY Ltd — pendants, wall lights, chandeliers and table lamps in natural stone. Trade enquiries welcome.">
+<style>
+:root{
+  --ivory:#f8f4ed; --sand:#efe8dc; --sand2:#e6dccc;
+  --ink:#26221c; --muted:#6f675c; --line:#ddd3c2;
+  --amber:#c98a3d; --amber2:#e0aa6a; --gold:#b98a44;
+  --white:#fffdf9;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--ivory);color:var(--ink);font-family:-apple-system,"Segoe UI","Helvetica Neue",Arial,sans-serif;line-height:1.6;font-size:16px;-webkit-font-smoothing:antialiased}
+h1,h2,h3,.serif{font-family:"Didot","Playfair Display",Georgia,"Times New Roman",serif;font-weight:500;letter-spacing:.01em}
+img,svg{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+
+nav{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(248,244,237,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav-in{max-width:1180px;margin:0 auto;padding:0 24px;height:64px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-family:Georgia,serif;font-size:21px;letter-spacing:.22em;color:var(--ink)}
+.logo b{color:var(--amber);font-weight:500}
+.links{display:flex;gap:32px;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.links a{padding:6px 0;border-bottom:2px solid transparent;transition:.2s}
+.links a:hover,.links a.on{color:var(--ink);border-color:var(--amber)}
+.cta-nav{background:var(--ink);color:var(--ivory)!important;padding:10px 18px!important;border:none!important;border-radius:2px;font-size:12px!important}
+.cta-nav:hover{background:var(--amber)!important;color:#fff!important}
+.burger{display:none;background:none;border:none;font-size:24px;color:var(--ink);cursor:pointer}
+.m-menu{display:none;flex-direction:column;background:var(--ivory);border-bottom:1px solid var(--line);padding:12px 24px 20px}
+.m-menu a{padding:12px 0;border-bottom:1px solid var(--line);letter-spacing:.12em;text-transform:uppercase;font-size:13px;color:var(--muted)}
+.m-menu.open{display:flex}
+
+.page-head{padding:130px 0 46px;background:linear-gradient(180deg,#fbf8f2 0%,var(--ivory) 100%);border-bottom:1px solid var(--line)}
+.eyebrow{font-size:12px;letter-spacing:.34em;text-transform:uppercase;color:var(--gold);margin-bottom:16px}
+.page-head h1{font-size:clamp(32px,4.2vw,50px);line-height:1.14}
+.page-head h1 em{font-style:italic;color:var(--amber)}
+.page-head p{margin-top:18px;color:var(--muted);max-width:620px}
+
+.filters{display:flex;flex-wrap:wrap;gap:10px;padding:30px 0 6px}
+.filters button{background:none;border:1px solid var(--line);color:var(--muted);font-size:12px;letter-spacing:.12em;text-transform:uppercase;padding:9px 16px;border-radius:2px;cursor:pointer;transition:.2s;font-family:inherit}
+.filters button:hover{border-color:var(--amber);color:var(--ink)}
+.filters button.on{background:var(--ink);border-color:var(--ink);color:var(--ivory)}
+
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:34px 28px;padding:34px 0 80px}
+.card{background:var(--white);border:1px solid var(--line);transition:.28s;display:flex;flex-direction:column}
+.card:hover{box-shadow:0 16px 40px rgba(38,34,28,.10);transform:translateY(-3px)}
+.card .ph{position:relative;background:#f2ece1;overflow:hidden;aspect-ratio:4/5}
+.card .ph img{width:100%;height:100%;object-fit:cover}
+.card .body{padding:20px 20px 24px;display:flex;flex-direction:column;flex:1}
+.tag{font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:8px}
+.card h3{font-size:19px;line-height:1.3;margin-bottom:4px}
+.model{font-size:11.5px;letter-spacing:.12em;color:var(--muted);margin-bottom:10px}
+.card p{font-size:13.5px;color:var(--muted);flex:1;margin-bottom:16px}
+.enq{font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink);border-bottom:1px solid var(--amber);padding-bottom:3px;align-self:flex-start;transition:.2s}
+.enq:hover{color:var(--amber)}
+
+.note{background:var(--sand);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:52px 0}
+.note-in{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+.note h2{font-size:clamp(24px,2.8vw,34px);line-height:1.2}
+.note p{color:var(--muted);margin-top:14px;font-size:15px}
+.btn{display:inline-block;padding:14px 30px;font-size:13px;letter-spacing:.16em;text-transform:uppercase;border-radius:2px;transition:.25s;border:1px solid var(--ink);margin-top:22px}
+.btn.dark{background:var(--ink);color:var(--ivory)}
+.btn.dark:hover{background:var(--amber);border-color:var(--amber);color:#fff}
+
+footer{background:var(--ink);color:#cfc6b8;padding:60px 0 26px;font-size:14px}
+.f-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px}
+footer .logo{color:var(--ivory)}
+footer h4{color:var(--ivory);font-size:12px;letter-spacing:.2em;text-transform:uppercase;margin-bottom:14px;font-family:inherit;font-weight:600}
+footer a{color:#cfc6b8}
+footer a:hover{color:var(--amber2)}
+.f-bottom{border-top:1px solid #3a352c;margin-top:44px;padding-top:22px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:12px;color:#8d8474}
+
+@media(max-width:900px){
+  .grid{grid-template-columns:repeat(2,1fr);gap:22px 16px}
+  .note-in{grid-template-columns:1fr}
+  .f-grid{grid-template-columns:1fr 1fr}
+  .links{display:none}
+  .burger{display:block}
+}
+@media(max-width:560px){
+  .grid{grid-template-columns:1fr}
+  .f-grid{grid-template-columns:1fr}
+  .page-head{padding:104px 0 34px}
+}
+</style>
+</head>
+<body id="top">
+
+<nav>
+  <div class="nav-in">
+    <a class="logo" href="/">GLEA<b>MORY</b></a>
+    <div class="links">
+      <a href="/#about">About</a>
+      <a href="/collections.html" class="on">Collections</a>
+      <a href="/#craft">Craft</a>
+      <a href="/#trade">Trade</a>
+      <a href="/#contact">Contact</a>
+      <a href="mailto:hello@gleamory.co.uk?subject=Trade%20enquiry" class="cta-nav">Enquire</a>
+    </div>
+    <button class="burger" onclick="document.getElementById('mm').classList.toggle('open')">☰</button>
+  </div>
+  <div class="m-menu" id="mm">
+    <a href="/#about">About</a>
+    <a href="/collections.html">Collections</a>
+    <a href="/#craft">Craft</a>
+    <a href="/#trade">Trade</a>
+    <a href="mailto:hello@gleamory.co.uk">Enquire</a>
+  </div>
+</nav>
+
+<header class="page-head">
+  <div class="wrap">
+    <div class="eyebrow">Collections</div>
+    <h1>Natural stone, <em>sculpted light</em></h1>
+    <p>Hand-carved alabaster and travertine, finished by hand and lit from within. Each piece carries its own veining — no two shades are identical. Trade pricing, custom sizes and finishes available on request.</p>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="filters">
+    <button class="on" data-f="all">All</button>
+    <button data-f="Pendant">Pendants</button>
+    <button data-f="Wall">Wall Lights</button>
+    <button data-f="Chandelier">Chandeliers</button>
+    <button data-f="Table">Table Lamps</button>
+  </div>
+  <div class="grid" id="grid">
+
+    <article class="card" data-cat="Pendant">
+      <div class="ph"><img src="/assets/products/3601540.jpg" alt="Alabaster pendant light HY-2610-A170 by GLEAMORY" loading="lazy"></div>
+      <div class="body">
+        <div class="tag">Pendant</div>
+        <h3>Alabaster Pendant</h3>
+        <div class="model">HY-2610-A170</div>
+        <p>A single hand-carved alabaster shade, its warm veining unique to each piece. Hung above a dining table, kitchen island or hotel lobby, it diffuses a soft, natural glow.</p>
+        <a class="enq" href="mailto:hello@gleamory.co.uk?subject=Enquiry%20HY-2610-A170">Request price</a>
+      </div>
+    </article>
+
+    <article class="card" data-cat="Pendant">
+      <div class="ph"><img src="/assets/products/1524342.jpg" alt="Alabaster pendant light HY-1610-140 by GLEAMORY" loading="lazy"></div>
+      <div class="body">
+        <div class="tag">Pendant</div>
+        <h3>Alabaster Drop Pendant</h3>
+        <div class="model">HY-1610-140</div>
+        <p>Hand-carved stone suspended on a slim cord, glowing evenly from within. A quiet focal point over dining tables and kitchen islands, or set into a stone table top.</p>
+        <a class="enq" href="mailto:hello@gleamory.co.uk?subject=Enquiry%20HY-1610-140">Request price</a>
+      </div>
+    </article>
+
+    <article class="card" data-cat="Pendant">
+      <div class="ph"><img src="/assets/products/1524391.jpg" alt="Alabaster pendant light HY-1210-A400 by GLEAMORY" loading="lazy"></div>
+      <div class="body">
+        <div class="tag">Pendant</div>
+        <h3>Alabaster Pendant, Wide</h3>
+        <div class="model">HY-1210-A400</div>
+        <p>A wider stone form that throws light across a room rather than down onto it. Suited to hospitality interiors, long dining tables and double-height spaces.</p>
+        <a class="enq" href="mailto:hello@gleamory.co.uk?subject=Enquiry%20HY-1210-A400">Request price</a>
+      </div>
+    </article>
+
+    <article class="card" data-cat="Wall">
+      <div class="ph"><img src="/assets/products/1524339.jpg" alt="Alabaster wall light HY-G9310 by GLEAMORY" loading="lazy"></div>
+      <div class="body">
+        <div class="tag">Wall Light</div>
+        <h3>Alabaster Pillar Sconce</h3>
+        <div class="model">HY-G9310</div>
+        <p>A tall, slender stone column with brass caps, washing the wall with a soft vertical glow. For corridors, bedrooms and hotel bathrooms.</p>
+        <a class="enq" href="mailto:hello@gleamory.co.uk?subject=Enquiry%20HY-G9310">Request price</a>
+      </div>
+    </article>
+
+    <article class="card" data-cat="Wall">
+      <div class="ph"><img src="/assets/products/3567821.jpg" alt="Alabaster wall lamp HY-G9150A by GLEAMORY" loading="lazy"></div>
+      <div class="body">
+        <div class="tag">Wall Light</div>
+        <h3>Alabaster Wall Lamp</h3>
+        <div class="model">HY-G9150A</div>
+        <p>Hand-carved stone face on a slim metal back plate. Mounted beside beds, in corridors or along hotel walls, it gives an even, warm wash of light.</p>
+        <a class="enq" href="mailto:hello@gleamory.co.uk?subject=Enquiry%20HY-G9150A">Request price</a>
+      </div>
+    </article>
+
+    <article class="card" data-cat="Chandelier">
+      <div class="ph"><img src="/assets/products/1524348.jpg" alt="Alabaster chandelier HY-4310-A9 by GLEAMORY" loading="lazy"></div>
+      <div class="body">
+        <div class="tag">Chandelier</div>
+        <h3>Alabaster Chandelier</h3>
+        <div class="model">HY-4310-A9</div>
+        <p>Multiple stone shades on a single drop, each one carved by hand. Built for stairwells, double-height lobbies and villas where a single pendant would be lost.</p>
+        <a class="enq" href="mailto:hello@gleamory.co.uk?subject=Enquiry%20HY-4310-A9">Request price</a>
+      </div>
+    </article>
+
+    <article class="card" data-cat="Table">
+      <div class="ph"><img src="/assets/products/3618386.jpg" alt="Travertine table lamp HY-TTT-402 by GLEAMORY" loading="lazy"></div>
+      <div class="body">
+        <div class="tag">Table Lamp</div>
+        <h3>Travertine Table Lamp</h3>
+        <div class="model">HY-TTT-402</div>
+        <p>Solid natural travertine with a soft, even glow — a calm presence for bedrooms, bedside tables and hotel suites. Weighty, quiet, undecorated.</p>
+        <a class="enq" href="mailto:hello@gleamory.co.uk?subject=Enquiry%20HY-TTT-402">Request price</a>
+      </div>
+    </article>
+
+    <article class="card" data-cat="Table">
+      <div class="ph"><img src="/assets/products/3590980.jpg" alt="Alabaster table lamp HY-602 by GLEAMORY" loading="lazy"></div>
+      <div class="body">
+        <div class="tag">Table Lamp</div>
+        <h3>Alabaster Table Lamp</h3>
+        <div class="model">HY-602</div>
+        <p>A natural alabaster base, turned and polished by hand, lit from within. The stone itself becomes the light source — for bedrooms, living rooms and suites.</p>
+        <a class="enq" href="mailto:hello@gleamory.co.uk?subject=Enquiry%20HY-602">Request price</a>
+      </div>
+    </article>
+
+    <article class="card" data-cat="Pendant">
+      <div class="ph"><img src="/assets/products/3601008.jpg" alt="Travertine pendant lamp HY-TTP-30032 by GLEAMORY" loading="lazy"></div>
+      <div class="body">
+        <div class="tag">Pendant</div>
+        <h3>Travertine Pendant</h3>
+        <div class="model">HY-TTP-30032</div>
+        <p>Layered travertine that gives the light depth and shadow. Hung over dining tables, bars and kitchen islands, or set flush into a stone surface.</p>
+        <a class="enq" href="mailto:hello@gleamory.co.uk?subject=Enquiry%20HY-TTP-30032">Request price</a>
+      </div>
+    </article>
+
+  </div>
+</div>
+
+<section class="note">
+  <div class="wrap note-in">
+    <div>
+      <h2>Not in the catalogue?</h2>
+      <p>These nine pieces are a selection. We hold a wider range of alabaster and travertine designs, and produce to custom drawings — sizes, finishes, metal trims and cable lengths to your specification.</p>
+    </div>
+    <div>
+      <p style="margin-top:0">For trade pricing, samples and lead times, write to us with the model codes you are interested in.</p>
+      <a class="btn dark" href="mailto:hello@gleamory.co.uk?subject=Trade%20enquiry%20%E2%80%94%20collections">Email our team</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <div class="logo">GLEA<b style="color:var(--amber2)">MORY</b></div>
+        <p style="margin-top:12px;max-width:340px">Handcrafted alabaster lighting for premium interiors. Spanish stone, honest craft, trade-ready service.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <a href="/#about">About</a><br><a href="/collections.html">Collections</a><br><a href="/#craft">Craft</a><br><a href="/#trade">Trade</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <a href="mailto:hello@gleamory.co.uk">hello@gleamory.co.uk</a><br><br>
+        <span style="color:#7d7466">GLEAMORY Ltd · UK</span>
+      </div>
+    </div>
+    <div class="f-bottom">
+      <span>© 2026 GLEAMORY Ltd. All rights reserved.</span>
+      <span>Company No. 17599516 · Registered in England &amp; Wales</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.querySelectorAll('.filters button').forEach(function(b){
+  b.addEventListener('click', function(){
+    document.querySelectorAll('.filters button').forEach(function(x){x.classList.remove('on')});
+    b.classList.add('on');
+    var f = b.dataset.f;
+    document.querySelectorAll('#grid .card').forEach(function(c){
+      c.style.display = (f === 'all' || c.dataset.cat === f) ? 'flex' : 'none';
+    });
+  });
+});
+</script>
+</body>
+</html>
