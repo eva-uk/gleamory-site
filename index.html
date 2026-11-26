@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GLEAMORY — Alabaster Lighting, Crafted for Interiors</title>
+<meta name="description" content="GLEAMORY Ltd — B2B supplier of handcrafted alabaster lighting. Spanish stone, sculpted light. Wholesale, OEM & ODM for interior brands, hotels and distributors.">
+<style>
+:root{
+  --ivory:#f8f4ed; --sand:#efe8dc; --sand2:#e6dccc;
+  --ink:#26221c; --muted:#6f675c; --line:#ddd3c2;
+  --amber:#c98a3d; --amber2:#e0aa6a; --gold:#b98a44;
+  --white:#fffdf9;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--ivory);color:var(--ink);font-family:-apple-system,"Segoe UI","Helvetica Neue",Arial,sans-serif;line-height:1.6;font-size:16px;-webkit-font-smoothing:antialiased}
+h1,h2,h3,.serif{font-family:"Didot","Playfair Display",Georgia,"Times New Roman",serif;font-weight:500;letter-spacing:.01em}
+img,svg{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+
+/* ===== NAV ===== */
+nav{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(248,244,237,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav-in{max-width:1180px;margin:0 auto;padding:0 24px;height:64px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-family:Georgia,serif;font-size:21px;letter-spacing:.22em;color:var(--ink)}
+.logo b{color:var(--amber);font-weight:500}
+.links{display:flex;gap:32px;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.links a{padding:6px 0;border-bottom:2px solid transparent;transition:.2s}
+.links a:hover{color:var(--ink);border-color:var(--amber)}
+.cta-nav{background:var(--ink);color:var(--ivory)!important;padding:10px 18px!important;border:none!important;border-radius:2px;font-size:12px!important}
+.cta-nav:hover{background:var(--amber)!important;color:#fff!important}
+.burger{display:none;background:none;border:none;font-size:24px;color:var(--ink);cursor:pointer}
+.m-menu{display:none;flex-direction:column;background:var(--ivory);border-bottom:1px solid var(--line);padding:12px 24px 20px}
+.m-menu a{padding:12px 0;border-bottom:1px solid var(--line);letter-spacing:.12em;text-transform:uppercase;font-size:13px;color:var(--muted)}
+.m-menu.open{display:flex}
+
+/* ===== HERO ===== */
+.hero{min-height:92vh;display:flex;align-items:center;position:relative;overflow:hidden;background:
+  radial-gradient(ellipse 60% 45% at 50% 58%, rgba(224,170,106,.35), rgba(248,244,237,0) 70%),
+  linear-gradient(180deg,#fbf8f2 0%, var(--ivory) 60%, var(--sand) 100%)}
+.hero-in{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;padding-top:90px}
+.eyebrow{font-size:12px;letter-spacing:.34em;text-transform:uppercase;color:var(--gold);margin-bottom:18px}
+.hero h1{font-size:clamp(38px,5.2vw,64px);line-height:1.12;color:var(--ink)}
+.hero h1 em{font-style:italic;color:var(--amber)}
+.hero p.lead{margin:22px 0 34px;font-size:17px;color:var(--muted);max-width:480px}
+.btn{display:inline-block;padding:14px 30px;font-size:13px;letter-spacing:.16em;text-transform:uppercase;border-radius:2px;transition:.25s;border:1px solid var(--ink)}
+.btn.dark{background:var(--ink);color:var(--ivory)}
+.btn.dark:hover{background:var(--amber);border-color:var(--amber);color:#fff}
+.btn.ghost{color:var(--ink);margin-left:14px}
+.btn.ghost:hover{background:var(--ink);color:var(--ivory)}
+.hero-art{position:relative;height:480px}
+.lamp{position:absolute;left:50%;transform:translateX(-50%)}
+.lamp .cord{width:2px;height:150px;background:var(--ink);margin:0 auto;opacity:.75}
+.lamp .shade{width:170px;height:88px;background:linear-gradient(180deg,#f3ead9 0%, #e8d9bd 78%, #d8c39a 100%);border-radius:88px 88px 10px 10px;margin:0 auto;box-shadow:0 18px 46px rgba(201,138,61,.28), inset 0 -8px 18px rgba(201,138,61,.22)}
+.lamp .bulb{width:26px;height:26px;border-radius:50%;background:radial-gradient(circle,#fff3d8 0%,#f2c877 55%,rgba(242,200,119,0) 100%);margin:-4px auto 0;filter:blur(1px)}
+.lamp .glow{width:360px;height:230px;margin:-20px auto 0;border-radius:50%;background:radial-gradient(ellipse at center top, rgba(240,190,110,.42), rgba(240,190,110,0) 68%);filter:blur(6px)}
+.hero-base{position:absolute;bottom:0;left:0;right:0;height:110px;background:linear-gradient(180deg,rgba(230,220,204,0),var(--sand2));}
+.scroll-hint{position:absolute;bottom:26px;left:50%;transform:translateX(-50%);font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--muted)}
+
+/* ===== SECTIONS ===== */
+section{padding:96px 0}
+.sec-head{text-align:center;max-width:640px;margin:0 auto 56px}
+.sec-head h2{font-size:clamp(28px,3.4vw,40px);margin-bottom:14px}
+.sec-head .rule{width:56px;height:2px;background:var(--amber);margin:0 auto 14px}
+.sec-head p{color:var(--muted);font-size:16px}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.about-text p{margin-bottom:16px;color:var(--muted);font-size:16px}
+.about-text h3{font-size:22px;margin-bottom:14px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:28px}
+.stat{background:var(--white);border:1px solid var(--line);border-radius:3px;padding:20px;text-align:center}
+.stat b{display:block;font-family:Georgia,serif;font-size:30px;color:var(--amber);font-weight:500}
+.stat span{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.stone{border-radius:4px;min-height:420px;background:
+  radial-gradient(ellipse 70% 40% at 50% 30%, rgba(224,170,106,.5), rgba(224,170,106,0) 70%),
+  linear-gradient(160deg,#f3ecdf 0%, #e7dcc6 45%, #dccbaa 100%);
+  display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;box-shadow:0 24px 60px rgba(38,34,28,.10)}
+.stone svg{width:70%}
+
+/* ===== COLLECTIONS ===== */
+.coll{background:var(--sand)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.card{background:var(--white);border:1px solid var(--line);border-radius:4px;overflow:hidden;transition:.3s}
+.card:hover{transform:translateY(-6px);box-shadow:0 24px 48px rgba(38,34,28,.12)}
+.card .art{height:210px;display:flex;align-items:center;justify-content:center;background:
+  radial-gradient(ellipse 55% 40% at 50% 62%, rgba(224,170,106,.32), rgba(224,170,106,0) 72%), linear-gradient(180deg,#faf6ee,#efe7d8)}
+.card .art svg{width:120px;height:160px}
+.card .body{padding:22px}
+.card h3{font-size:19px;margin-bottom:6px}
+.card p{font-size:14px;color:var(--muted)}
+.card .tag{display:inline-block;margin-top:12px;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);border:1px solid var(--gold);padding:5px 12px;border-radius:20px}
+
+/* ===== CRAFT ===== */
+.craft-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.craft{background:var(--white);border:1px solid var(--line);border-radius:4px;padding:34px}
+.craft .no{font-family:Georgia,serif;font-size:15px;color:var(--gold);letter-spacing:.2em;margin-bottom:14px}
+.craft h3{font-size:20px;margin-bottom:12px}
+.craft p{font-size:14.5px;color:var(--muted)}
+
+/* ===== TRADE ===== */
+.trade{background:linear-gradient(180deg,var(--sand2),var(--sand))}
+.trade-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.trade-item{background:var(--white);border-radius:4px;padding:28px;border:1px solid var(--line);text-align:center}
+.trade-item b{display:block;font-family:Georgia,serif;font-size:22px;margin-bottom:6px;color:var(--ink);font-weight:500}
+.trade-item span{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.trade-note{margin-top:34px;text-align:center;color:var(--muted);font-size:14.5px}
+
+/* ===== CONTACT ===== */
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px}
+.contact-info h2{font-size:clamp(28px,3.4vw,40px);margin-bottom:16px}
+.contact-info p{color:var(--muted);margin-bottom:22px}
+.c-row{display:flex;gap:14px;padding:14px 0;border-bottom:1px solid var(--line);font-size:15px}
+.c-row .k{width:110px;flex:none;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);padding-top:3px}
+.form{background:var(--white);border:1px solid var(--line);border-radius:4px;padding:34px}
+.form h3{font-size:20px;margin-bottom:6px}
+.form p{font-size:13.5px;color:var(--muted);margin-bottom:20px}
+.form label{display:block;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:14px 0 6px}
+.form input,.form textarea,.form select{width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:3px;background:var(--ivory);font-size:15px;font-family:inherit;color:var(--ink)}
+.form input:focus,.form textarea:focus,.form select:focus{outline:2px solid var(--amber2);border-color:var(--amber)}
+.form .btn{width:100%;margin-top:22px;text-align:center;cursor:pointer}
+.form-msg{display:none;margin-top:14px;font-size:14px;color:#2e7d43}
+
+/* ===== FOOTER ===== */
+footer{background:var(--ink);color:#a99f8f;padding:56px 0 34px;font-size:13.5px}
+.f-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px;margin-bottom:36px}
+footer .logo{color:var(--ivory);font-size:19px}
+footer h4{color:var(--ivory);font-size:12px;letter-spacing:.2em;text-transform:uppercase;margin-bottom:14px;font-weight:600}
+footer a:hover{color:var(--amber2)}
+.f-bottom{border-top:1px solid #3a342b;padding-top:22px;display:flex;justify-content:space-between;font-size:12px;color:#7d7466}
+
+/* reveal */
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:900px){
+  .links{display:none}.burger{display:block}
+  .hero-in,.about-grid,.contact-grid{grid-template-columns:1fr;gap:30px}
+  .hero{min-height:auto;padding-bottom:70px}
+  .hero-art{height:360px}
+  .cards,.craft-grid{grid-template-columns:1fr 1fr}
+  .trade-grid{grid-template-columns:1fr 1fr}
+  .f-grid{grid-template-columns:1fr;gap:26px}
+  section{padding:70px 0}
+}
+@media(max-width:600px){
+  .cards,.craft-grid,.trade-grid,.stats{grid-template-columns:1fr}
+  .hero-art{height:300px}
+  .lamp .shade{width:130px;height:70px}
+  .lamp .glow{width:260px;height:170px}
+  .btn.ghost{margin-left:0;margin-top:12px}
+  .f-bottom{flex-direction:column;gap:8px}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-in">
+    <a class="logo" href="#top">GLEA<b>MORY</b></a>
+    <div class="links">
+      <a href="#about">About</a>
+      <a href="#collections">Collections</a>
+      <a href="#craft">Craft</a>
+      <a href="#trade">Trade</a>
+      <a href="#contact" class="cta-nav">Request Catalogue</a>
+    </div>
+    <button class="burger" onclick="document.getElementById('mm').classList.toggle('open')">&#9776;</button>
+  </div>
+  <div class="m-menu" id="mm">
+    <a href="#about" onclick="mmclose()">About</a>
+    <a href="#collections" onclick="mmclose()">Collections</a>
+    <a href="#craft" onclick="mmclose()">Craft</a>
+    <a href="#trade" onclick="mmclose()">Trade</a>
+    <a href="#contact" onclick="mmclose()">Request Catalogue</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero" id="top">
+  <div class="wrap hero-in">
+    <div>
+      <div class="eyebrow">Alabaster Lighting &middot; B2B Wholesale</div>
+      <h1>Stone that<br>holds the <em>light</em>.</h1>
+      <p class="lead">GLEAMORY supplies handcrafted alabaster lighting to interior brands, hotels and distributors worldwide — Spanish stone, sculpted by hand, glowing warm in every room.</p>
+      <a class="btn dark" href="#contact">Request Catalogue</a>
+      <a class="btn ghost" href="#collections">View Collections</a>
+    </div>
+    <div class="hero-art">
+      <div class="lamp">
+        <div class="cord"></div>
+        <div class="shade"></div>
+        <div class="bulb"></div>
+        <div class="glow"></div>
+      </div>
+      <div class="hero-base"></div>
+    </div>
+  </div>
+  <div class="scroll-hint">Scroll</div>
+</header>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="wrap about-grid">
+    <div class="about-text reveal">
+      <div class="eyebrow">About GLEAMORY</div>
+      <h3>A lighting house built on one material.</h3>
+      <p>GLEAMORY Ltd is a UK-registered trading company dedicated to alabaster lighting. We work directly with Spanish quarries and a dedicated craft workshop, turning raw alabaster into pendants, sconces and lamps for premium interiors.</p>
+      <p>Behind GLEAMORY stands more than sixteen years of lighting export experience — the same team, factories and quality system that have served European brands since 2010, now focused on a single, honest material.</p>
+      <div class="stats">
+        <div class="stat"><b>16+</b><span>Years Export</span></div>
+        <div class="stat"><b>100%</b><span>Natural Stone</span></div>
+        <div class="stat"><b>OEM/ODM</b><span>For Brands</span></div>
+      </div>
+    </div>
+    <div class="stone reveal">
+      <svg viewBox="0 0 300 220" fill="none">
+        <ellipse cx="150" cy="200" rx="110" ry="12" fill="#c9b58c" opacity=".35"/>
+        <path d="M60 110 Q90 40 150 40 Q210 40 240 110 Q215 96 150 96 Q85 96 60 110Z" fill="#efe3cb" stroke="#c9a96a" stroke-width="1.5"/>
+        <path d="M60 110 Q150 130 240 110" stroke="#c9a96a" stroke-width="1"/>
+        <rect x="146" y="128" width="8" height="14" rx="3" fill="#8a7a5e"/>
+        <ellipse cx="150" cy="150" rx="34" ry="12" fill="#f6d190" opacity=".85"/>
+        <ellipse cx="150" cy="158" rx="70" ry="22" fill="#f2c877" opacity=".35"/>
+        <ellipse cx="150" cy="164" rx="105" ry="30" fill="#f2c877" opacity=".18"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- COLLECTIONS -->
+<section id="collections" class="coll">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="rule"></div>
+      <h2>The Collections</h2>
+      <p>Six families of alabaster fixtures — each piece cut, carved and finished by hand, no two stones alike.</p>
+    </div>
+    <div class="cards">
+      <div class="card reveal"><div class="art">
+        <svg viewBox="0 0 120 160" fill="none"><path d="M20 8 h80" stroke="#26221c" stroke-width="2"/><path d="M52 8 v14" stroke="#26221c" stroke-width="2"/><path d="M30 22 h44 l14 34 h-72z" fill="#f1e5cc" stroke="#c9a96a" stroke-width="1.5"/><ellipse cx="58" cy="70" rx="26" ry="9" fill="#f6d190" opacity=".9"/><ellipse cx="58" cy="76" rx="48" ry="18" fill="#f2c877" opacity=".25"/></svg>
+      </div><div class="body"><h3>Pendants</h3><p>Dome, sphere and geometric hangs for dining rooms, lobbies and stairwells.</p><span class="tag">Dining &amp; Lobby</span></div></div>
+      <div class="card reveal"><div class="art">
+        <svg viewBox="0 0 120 160" fill="none"><rect x="96" y="6" width="8" height="96" rx="3" fill="#26221c"/><path d="M88 30 h10 v40 h-10z" fill="#26221c" opacity=".15"/><path d="M62 34 q26 2 28 30 h-56 q2 -28 28 -30z" fill="#f1e5cc" stroke="#c9a96a" stroke-width="1.5"/><ellipse cx="62" cy="76" rx="24" ry="8" fill="#f6d190" opacity=".9"/><ellipse cx="60" cy="82" rx="44" ry="16" fill="#f2c877" opacity=".25"/></svg>
+      </div><div class="body"><h3>Wall Sconces</h3><p>Half-dome and column sconces for corridors, bathrooms and bedside walls.</p><span class="tag">Corridor &amp; Bath</span></div></div>
+      <div class="card reveal"><div class="art">
+        <svg viewBox="0 0 120 160" fill="none"><rect x="56" y="88" width="8" height="60" rx="3" fill="#26221c"/><ellipse cx="60" cy="150" rx="34" ry="7" fill="#26221c"/><path d="M34 60 q0 -30 26 -30 q26 0 26 30 q0 14 -26 14 q-26 0 -26 -14z" fill="#f1e5cc" stroke="#c9a96a" stroke-width="1.5"/><ellipse cx="60" cy="86" rx="20" ry="6" fill="#f6d190" opacity=".9"/><ellipse cx="60" cy="92" rx="40" ry="14" fill="#f2c877" opacity=".25"/></svg>
+      </div><div class="body"><h3>Table Lamps</h3><p>Orb and urn forms on brass or walnut bases — the classic alabaster statement.</p><span class="tag">Bedside &amp; Desk</span></div></div>
+      <div class="card reveal"><div class="art">
+        <svg viewBox="0 0 120 160" fill="none"><rect x="57" y="30" width="6" height="112" rx="3" fill="#26221c"/><ellipse cx="60" cy="146" rx="30" ry="6" fill="#26221c"/><path d="M40 24 h40 l-6 16 h-28z" fill="#f1e5cc" stroke="#c9a96a" stroke-width="1.5"/><ellipse cx="60" cy="52" rx="22" ry="7" fill="#f6d190" opacity=".9"/><ellipse cx="60" cy="58" rx="42" ry="15" fill="#f2c877" opacity=".25"/></svg>
+      </div><div class="body"><h3>Floor Lamps</h3><p>Tall stems with alabaster crowns for living rooms and reading corners.</p><span class="tag">Living Room</span></div></div>
+      <div class="card reveal"><div class="art">
+        <svg viewBox="0 0 120 160" fill="none"><path d="M60 6 v16" stroke="#26221c" stroke-width="2"/><circle cx="60" cy="28" r="5" fill="#26221c"/><path d="M60 28 L30 52 M60 28 L90 52 M60 28 L60 54" stroke="#26221c" stroke-width="1.4"/><ellipse cx="30" cy="62" rx="14" ry="10" fill="#f1e5cc" stroke="#c9a96a" stroke-width="1.3"/><ellipse cx="90" cy="62" rx="14" ry="10" fill="#f1e5cc" stroke="#c9a96a" stroke-width="1.3"/><ellipse cx="60" cy="66" rx="12" ry="9" fill="#f1e5cc" stroke="#c9a96a" stroke-width="1.3"/><ellipse cx="60" cy="84" rx="52" ry="18" fill="#f2c877" opacity=".3"/></svg>
+      </div><div class="body"><h3>Chandeliers</h3><p>Multi-arm alabaster chandeliers for hotel suites, restaurants and villas.</p><span class="tag">Hotel &amp; Suite</span></div></div>
+      <div class="card reveal"><div class="art">
+        <svg viewBox="0 0 120 160" fill="none"><rect x="18" y="6" width="84" height="104" rx="6" fill="#26221c" opacity=".12"/><path d="M30 34 h60 v34 q-30 12 -60 0z" fill="#f1e5cc" stroke="#c9a96a" stroke-width="1.5"/><ellipse cx="60" cy="80" rx="34" ry="10" fill="#f6d190" opacity=".9"/><ellipse cx="60" cy="88" rx="54" ry="18" fill="#f2c877" opacity=".28"/></svg>
+      </div><div class="body"><h3>Ceiling &amp; Wall Washers</h3><p>Flush alabaster plates that turn an entire ceiling into a soft light source.</p><span class="tag">Ambient</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CRAFT -->
+<section id="craft">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="rule"></div>
+      <h2>From Quarry to Ceiling</h2>
+      <p>One material, three honest steps. Every lamp can be traced back to a single block of stone.</p>
+    </div>
+    <div class="craft-grid">
+      <div class="craft reveal"><div class="no">01 — SOURCE</div><h3>Spanish Alabaster</h3><p>Blocks are selected in Spanish quarries for translucency and vein character. We grade every block before it leaves the ground — only stone that glows evenly becomes a GLEAMORY fixture.</p></div>
+      <div class="craft reveal"><div class="no">02 — SHAPE</div><h3>Hand Carving</h3><p>Slices are cut, turned and carved by hand in our partner workshop. Wall thickness is tuned by feel: thick enough for strength, thin enough for the warm diffusion alabaster is famous for.</p></div>
+      <div class="craft reveal"><div class="no">03 — LIGHT</div><h3>Warm Electronics</h3><p>Dimmable LED modules, certified drivers and fabric cords are fitted and aged-in for 48 hours before packing. Every fixture ships with a matching spare stone patch for future service.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- TRADE -->
+<section id="trade" class="trade">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="rule"></div>
+      <h2>Built for the Trade</h2>
+      <p>We speak the language of distributors, interior designers and hospitality procurement.</p>
+    </div>
+    <div class="trade-grid">
+      <div class="trade-item reveal"><b>Low MOQ</b><span>Small first orders</span></div>
+      <div class="trade-item reveal"><b>OEM / ODM</b><span>Your brand, our craft</span></div>
+      <div class="trade-item reveal"><b>30–45 Days</b><span>Production lead time</span></div>
+      <div class="trade-item reveal"><b>FOB / CIF</b><span>Global shipping terms</span></div>
+    </div>
+    <p class="trade-note reveal">Custom stone thickness, brass finishes and cord colours available on request. Compliance documents (CE, UKCA, RoHS) provided per shipment — configured to the destination market.</p>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="wrap contact-grid">
+    <div class="contact-info reveal">
+      <div class="eyebrow">Contact</div>
+      <h2>Request the Catalogue</h2>
+      <p>Tell us your project — hotel, retail programme or a single hero piece. We reply within one business day with the full alabaster catalogue and trade pricing.</p>
+      <div class="c-row"><div class="k">Email</div><div>hello@gleamory.co.uk</div></div>
+      <div class="c-row"><div class="k">Company</div><div>GLEAMORY LTD — United Kingdom</div></div>
+      <div class="c-row"><div class="k">Registration</div><div>Company No. <span id="regNo">17599516</span> — incorporated in England &amp; Wales, 24 November 2026</div></div>
+      <div class="c-row"><div class="k">Registered Office</div><div>128 City Road, London, EC1V 2NX, United Kingdom</div></div>
+      <div class="c-row"><div class="k">Sourcing</div><div>Jiangmen, Guangdong, China — lighting manufacturing hub</div></div>
+      <div class="c-row"><div class="k">Business Lines</div><div>Alabaster Lighting &middot; Beauty Products</div></div>
+    </div>
+    <div class="form reveal">
+      <h3>Trade Enquiry</h3>
+      <p>Fields marked * are required. Your details are used only to reply to your enquiry.</p>
+      <label>Your Name *</label>
+      <input type="text" id="fName" placeholder="Jane Smith">
+      <label>Company *</label>
+      <input type="text" id="fCo" placeholder="Interior studio / distributor">
+      <label>Country *</label>
+      <input type="text" id="fCountry" placeholder="United Kingdom">
+      <label>Interest</label>
+      <select id="fInterest">
+        <option>Full catalogue</option>
+        <option>Pendants</option>
+        <option>Wall sconces</option>
+        <option>Table &amp; floor lamps</option>
+        <option>Chandeliers</option>
+        <option>OEM / ODM project</option>
+      </select>
+      <label>Message</label>
+      <textarea id="fMsg" rows="4" placeholder="Project type, quantities, timeline..."></textarea>
+      <button class="btn dark" onclick="sendMail()">Send Enquiry</button>
+      <div class="form-msg" id="fOk">✓ Your email draft is ready — it will open in your mail app.</div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <div class="logo">GLEA<b style="color:var(--amber2)">MORY</b></div>
+        <p style="margin-top:12px;max-width:340px">Handcrafted alabaster lighting for premium interiors. Spanish stone, honest craft, trade-ready service.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <a href="#about">About</a><br><a href="#collections">Collections</a><br><a href="#craft">Craft</a><br><a href="#trade">Trade</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <a href="mailto:hello@gleamory.co.uk">hello@gleamory.co.uk</a><br><br>
+        <span style="color:#7d7466">GLEAMORY Ltd · UK</span>
+      </div>
+    </div>
+    <div class="f-bottom">
+      <span>© 2026 GLEAMORY Ltd. All rights reserved.</span>
+      <span>Alabaster Lighting · Company No. 17599516 · Registered in England &amp; Wales</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+function mmclose(){document.getElementById('mm').classList.remove('open')}
+function sendMail(){
+  var n=document.getElementById('fName').value.trim(), c=document.getElementById('fCo').value.trim(), k=document.getElementById('fCountry').value.trim();
+  if(!n||!c||!k){document.getElementById('fOk').style.display='block';document.getElementById('fOk').style.color='#b0532c';document.getElementById('fOk').textContent='Please fill in Name, Company and Country.';return}
+  var s='Trade enquiry from '+c+' ('+k+')';
+  var b='Name: '+n+'\nCompany: '+c+'\nCountry: '+k+'\nInterest: '+document.getElementById('fInterest').value+'\n\nMessage:\n'+document.getElementById('fMsg').value;
+  location.href='mailto:hello@gleamory.co.uk?subject='+encodeURIComponent(s)+'&body='+encodeURIComponent(b);
+  var ok=document.getElementById('fOk');ok.style.display='block';ok.style.color='#2e7d43';ok.textContent='✓ Your email draft is ready — it will open in your mail app.';
+}
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)e.target.classList.add('in')})},{threshold:.12});
+document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});
+</script>
+</body>
+</html>
